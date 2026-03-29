@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Tugas pemweb</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #1d1f27, #2c2f3a);
+        color: #fff;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        min-height: 100vh;
+    }
+
+    .info {
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: #00ffd5;
+    }
+
+    .info p {
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        color: #dcdcdc;
+    }
+
+    .info .highlight {
+        color: #ffd369;
+        font-weight: bold;
+    }
+
+    .info a {
+        margin-top: 10px;
+        color: #4fc3f7;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .buatcard {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background: #262a34;
+        padding: 25px;
+        width: 320px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        text-align: center;
+    }
+
+    .card img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 3px solid #00ffd5;
+    }
+
+    .card h2 {
+        margin-bottom: 5px;
+    }
+
+    .card p {
+        font-size: 13px;
+        margin-bottom: 15px;
+        color: #bbb;
+    }
+
+    .btn {
+        display: block;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 6px;
+        text-decoration: none;
+        background: #3a86ff;
+        color: white;
+        transition: 0.2s;
+    }
+
+    .btn:hover {
+        background: #265ecf;
+    }
+
+    .btn.alt {
+        background: #ff006e;
+    }
+
+    .btn.alt:hover {
+        background: #c40052;
+    }
+
+    .quote {
+        margin-top: 15px;
+        font-size: 12px;
+        font-style: italic;
+        color: #aaa;
+    }
+
+    @media(max-width: 800px){
+        .container {
+            grid-template-columns: 1fr;
+        }
+        .info {
+            padding: 30px;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="info">
+        <h1>About Me</h1>
+        <p>
+            Dimas merupakan mahasiswa sistem informasi unila angkatan 2024, dia itu ingin menjadi programer tapi enggan mengoding
+        </p>
+
+        <p>
+            Selain itu dia sangat suka dengan sebuah tim bernama Manchester United,
+            dan Mercedes.
+        </p>
+    </div>
+
+    <div class="buatcard">
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.kI5MDotz9qNQ5fhenxU99gHaIy?pid=Api&P=0&h=180" alt="profile">
+            <h2>Dimskuyyy</h2>
+            <p>makan • tidur • makan lagi</p>
+
+            <a href="https://instagram.com/dimaschndraa_" class="btn" target="_blank">Instagram</a>
+            <a href="https://wa.me/6287864316280" class="btn" target="_blank">WhatsApp</a>
+            <a href="#" class="btn alt">Follow</a>
+
+            <div class="quote">
+                "males ngoding, mending scroll fesnuk"
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
